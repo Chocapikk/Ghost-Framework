@@ -12,7 +12,7 @@ class GhostModule:
         self.ghost = ghost()
 
         self.name = "install"
-        self.description = "Install an application"
+        self.description = "Install an application."
         self.usage = "Usage: install <app_name>"
         self.type = "managing"
         self.args = 2
