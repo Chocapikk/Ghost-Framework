@@ -14,7 +14,7 @@ class GhostModule:
         self.name = "eatpass"
         self.description = "Eat device passcode."
         self.usage = "Usage: eatpass"
-        self.type = "managing"
+        self.type = "root"
         self.args = 1
 
     def run(self, cmd_data):

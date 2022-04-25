@@ -19,4 +19,7 @@ class GhostModule:
 
     def run(self, cmd_data):
         print(self.badges.G + "Opening device shell...")
-        self.ghost.send_command("shell", "", True)
+        output = self.ghost.send_command("shell", "", True)
+        if "error: more than one device/emulator" in output:
+            print(self.badges.E + "Please kill-server and try again...")
+            

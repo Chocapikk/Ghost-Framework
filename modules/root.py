@@ -20,8 +20,8 @@ class GhostModule:
         self.args = 1
 
     def run(self, cmd_data):
-        output = self.ghost.send_command("shell", "su")
-        if "inaccessible" in output or "not found" in output:
+        output = self.ghost.send_command("shell", "which su",False)
+        if not "su" in output:
             print(self.badges.E + "Target System is not rooted...")
         else: 
             print(self.badges.G + "Target System is rooted !")

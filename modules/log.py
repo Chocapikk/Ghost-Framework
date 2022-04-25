@@ -20,10 +20,11 @@ class GhostModule:
         self.args = 2
 
     def run(self, cmd_data): 
-        result = self.ghost.send_command("shell","logcat -d")
-        result = list(result)
-        with ("w",str(cmd_data.split(" ")[0])) as output:
-            for letter in result:
-                output.write(result)
-        print(self.badges.G + f"Dumped Logs on {cmd_data.split(' ')[0]}..")
+        output = self.ghost.send_command("shell","logcat -d > /sdcard/logcat.txt")
+        if "logcat read failure" in output:
+            print(self.badges.E + f"Cannot Dump Logs...")
+        else:
+            output = self.ghost.send_command("pull", f"/sdcard/logcat.txt {cmd_data.split(' ')[0]}")
+            output = self.ghost.send_command("shell", f"rm -rf /sdcard/logcat.txt")
+            print(self.badges.G + f"Logs ready at {cmd_data.split(' ')[0]}")
             

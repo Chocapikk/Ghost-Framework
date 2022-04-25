@@ -13,6 +13,7 @@ class helper:
         managing_commands = []
         stealing_commands = []
         trolling_commands = []
+        root_commands = []
         boot_commands = []
 
         commands = dict()
@@ -23,6 +24,7 @@ class helper:
             if commands[i].type == "managing": managing_commands.append(commands[i])
             if commands[i].type == "stealing": stealing_commands.append(commands[i])
             if commands[i].type == "trolling": trolling_commands.append(commands[i])
+            if commands[i].type == "root": root_commands.append(commands[i])
             if commands[i].type == "boot": boot_commands.append(commands[i])
 
         print("")
@@ -134,5 +136,25 @@ class helper:
             print("    Command" + " " * (bigger) + "Description")
             print("    -------" + " " * (bigger) + "-----------")
             for i in boot_commands:
+                print("    " + i.name + " " * (7 - len(i.name) + bigger) + i.description)
+            print("")
+
+        if len(root_commands) > 0:
+            bigger = len(root_commands[0].name)
+            for i in root_commands:
+                if len(i.name) > bigger:
+                    bigger = len(i.name)
+
+            if bigger >= 14:
+                bigger = bigger - 5
+            else:
+                bigger = 8
+
+            print("Root Commands")
+            print("=============")
+            print("")
+            print("    Command" + " " * (bigger) + "Description")
+            print("    -------" + " " * (bigger) + "-----------")
+            for i in root_commands:
                 print("    " + i.name + " " * (7 - len(i.name) + bigger) + i.description)
             print("")
