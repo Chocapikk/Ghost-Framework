@@ -1,0 +1,10 @@
+
+    Command        Description
+    -------        -----------
+    clear          Clear terminal window.
+    exit           Exit Ghost Framework.
+    help           Show available commands.
+    options        Show available options.
+    run            Start attack handler.
+    set            Set an option value.
+   
