@@ -3,27 +3,23 @@
 <h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/91632566-45bf3780-e9ea-11ea-9b85-1ee4f451ae39.png" alt="logo" height="250px"></h3>
 
 <p align="center">
-  <a href="http://entysec.netlify.app/">
-    <img src="https://img.shields.io/badge/EntySec-Ivan%20Nikolsky-blue.svg">
-  </a> 
-  <a href="https://github.com/EntySec/ghost/releases">
-    <img src="https://img.shields.io/github/release/EntySec/ghost.svg">
-  </a>
+  <img src="https://img.shields.io/badge/Chocapikk-Valentin%20Lobstein-yellow">
+  <img src="https://img.shields.io/badge/version-v6.0-red">
   <a href="https://wikipedia.org/wiki/Python_(programming_language)">
-    <img src="https://img.shields.io/badge/language-python-blue.svg">
+    <img src="https://img.shields.io/badge/language-python-blueviolet.svg">
  </a>
-  <a href="https://github.com/EntySec/ghost/issues?q=is%3Aissue+is%3Aclosed">
-      <img src="https://img.shields.io/github/issues/EntySec/ghost.svg">
+  <a href="https://github.com/Chocapikk/Ghost-Framework/issues?q=is%3Aissue+is%3Aclosed">
+      <img src="https://img.shields.io/github/issues/Chocapikk/Ghost-Framework.svg">
   </a>
-  <a href="https://github.com/EntySec/ghost/wiki">
+  <a href="https://github.com/Chocapikk/Ghost-Framework/wiki">
       <img src="https://img.shields.io/badge/wiki%20-ghost-lightgrey.svg">
  </a>
-  <a href="https://twitter.com/EntySec">
-    <img src="https://img.shields.io/badge/twitter-EntySec-blue.svg">
+  <a href="https://www.instagram.com/_._chocapic_._">
+    <img src="https://img.shields.io/badge/Instagram-_._chocapic_._-orange.svg">
  </a>
 </p>
 
-<h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/99542419-1a356300-29c3-11eb-93e6-68bc54b31b5f.png" alt="ghost_1" height="540px"></h3>
+<h3 align="center"><img src="https://raw.githubusercontent.com/Chocapikk/Ghost-Framework/main/banner/help.png" alt="ghost_1" height="540px"></h3>
 
 ***
 
@@ -41,19 +37,19 @@ gives you the power and convenience of remote Android device administration.
 
 ## Ghost installation
 
-> cd ghost
+> cd Ghost-Framework
 
-> chmod +x install.sh
+> sudo chmod +x install.sh
 
-> ./install.sh
+> sudo ./install.sh
 
 ## Ghost uninstallation
 
-> cd ghost
+> cd Ghost-Framework
 
-> chmod +x uninstall.sh
+> sudo chmod +x uninstall.sh
 
-> ./uninstall.sh
+> sudo ./uninstall.sh
 
 ***
 
@@ -64,7 +60,7 @@ To run Ghost Framework you should
 execute the following command.
 ```
 
-> ghost
+> ./ghost
 
 ***
 
@@ -92,7 +88,7 @@ Ghost Framework has the ability to access device screen
 and control it remotely using mouse and keyboard.
 ```
 
-<h3 align="center"><img src="https://user-images.githubusercontent.com/54115104/99542424-1d305380-29c3-11eb-919c-3f683feac366.png" alt="ghost_2" height="540px"></h3>
+<h3 align="center"><img src="https://raw.githubusercontent.com/Chocapikk/Ghost-Framework/main/banner/help2.png" alt="ghost_2" height="540px"></h3>
 
 ***
 
