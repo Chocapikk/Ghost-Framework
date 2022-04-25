@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-media volume --stream 3 --set 100
 # Valentin Lobstein 2022
 # Default Project : https://github.com/EntySec/Ghost
 
